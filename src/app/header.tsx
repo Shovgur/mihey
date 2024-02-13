@@ -1,11 +1,11 @@
 "use client";
+import { useState, Fragment } from "react";
 import InstIcon from "@/components/Icons/InstIcon";
 import TelegramIcon from "@/components/Icons/TelegramIcon";
 import Link from "next/link";
 import { Dialog, Transition } from "@headlessui/react";
-import { useState, Fragment } from "react";
-
-const Header = () => {
+import ContactForm from "@/components/ContactForm";
+const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(true);
 
   function closeModal() {
@@ -57,20 +57,8 @@ const Header = () => {
                     <Dialog.Title
                       as="h3"
                       className="text-lg font-medium leading-6 text-gray-900"
-                    >
-                      Форма
-                    </Dialog.Title>
-                    <div className="mt-2"></div>
-
-                    <div className="mt-4">
-                      <button
-                        type="button"
-                        className="inline-flex justify-center transform transition-all rounded-lg border border-black px-4 py-2 text-sm font-medium text-black hover:-translate-y-1 "
-                        onClick={closeModal}
-                      >
-                        Отмена
-                      </button>
-                    </div>
+                    />
+                    <ContactForm onClose={closeModal} />
                   </Dialog.Panel>
                 </Transition.Child>
               </div>
