@@ -14,6 +14,22 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
     },
+    fontFamily: {
+      primary: ["Vollkorn"],
+    },
+    fontSize: {
+      big: ["5rem", { fontWeight: 400, lineHeight: "120px" }],
+      "header-little": ["1rem", { fontWeight: 400, lineHeight: "18px" }],
+      "page-title": [
+        "2rem",
+        { fontWeight: 400, lineHeight: "34px", letterSpacing: "" },
+      ],
+    },
+    colors: {
+      'base': "#220A67",
+      "base_2": "#3F1CA3",
+      'white': '#fff'
+    },
   },
   plugins: [],
 };
