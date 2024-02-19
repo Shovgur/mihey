@@ -25,7 +25,7 @@ const config: Config = {
         { fontWeight: 400, lineHeight: "34px", letterSpacing: "" },
       ],
     },
-    colors: {
+    textColor: {
       'base': "#220A67",
       "base_2": "#3F1CA3",
       'white': '#fff'

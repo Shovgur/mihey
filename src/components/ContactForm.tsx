@@ -1,6 +1,7 @@
 "use client";
 import { useState, ChangeEvent, FormEvent } from "react";
 import { sendMessage } from "./sendEmail";
+import { MoveUpRight } from "lucide-react";
 
 interface FormData {
   name: string;
@@ -39,13 +40,13 @@ const ContactForm: React.FC<ContactFormProps> = ({ onClose }) => {
 
   return (
     <form
-      className="pt-2 text-black flex flex-col gap-8"
+      className="text-black flex flex-col gap-12 pt-32"
       onSubmit={handleSubmit}
     >
       <label className="flex flex-col">
         <input
-          placeholder="Ваше имя"
-          className="w-full rounded-none pt-2 border-0 border-b bg-transparent pb-3   text-base font-light leading-[1em] tracking-[-.06em] text-black outline-none placeholder:font-light placeholder:text-black placeholder:text-opacity-50 focus:placeholder:text-opacity-30 lg:pb-2 "
+          placeholder="Имя"
+          className="w-full pt-2 border-0 border-b bg-transparent pb-3 lg:px-2 text-white font-light leading-[1em] tracking-[-.03em] text-black outline-none placeholder:font-light placeholder:text-black placeholder:text-opacity-50 focus:placeholder:text-opacity-30 lg:pb-2 "
           type="text"
           name="name"
           value={formData.name}
@@ -55,7 +56,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ onClose }) => {
       <label className="flex flex-col">
         <input
           placeholder="Email"
-          className="w-full rounded-none pt-2 border-0 border-b bg-transparent pb-3   text-base font-light leading-[1em] tracking-[-.06em] text-black outline-none placeholder:font-light placeholder:text-black placeholder:text-opacity-50 focus:placeholder:text-opacity-30 lg:pb-2 "
+          className="w-full rounded-none pt-2 border-0 border-b bg-transparent pb-3 lg:px-2 text-white  font-light leading-[1em] tracking-[-.03em] text-black outline-none placeholder:font-light placeholder:text-black placeholder:text-opacity-50 focus:placeholder:text-opacity-30 lg:pb-2 "
           type="email"
           name="email"
           value={formData.email}
@@ -65,28 +66,17 @@ const ContactForm: React.FC<ContactFormProps> = ({ onClose }) => {
       <label className="flex flex-col">
         <input
           placeholder="Сообщение"
-          className="w-full rounded-none pt-2 border-0 border-b bg-transparent pb-3   text-base font-light leading-[1em] tracking-[-.06em] text-black outline-none placeholder:font-light placeholder:text-black placeholder:text-opacity-50 focus:placeholder:text-opacity-30 lg:pb-2 "
+          className="w-full rounded-none pt-2 border-0 border-b bg-transparent pb-3 lg:px-2 text-white  font-light leading-[1em] tracking-[-.03em] text-black outline-none placeholder:font-light placeholder:text-black placeholder:text-opacity-50 focus:placeholder:text-opacity-30 lg:pb-2 "
           type="text"
           name="message"
           value={formData.message}
           onChange={handleInputChange}
         />
       </label>
-      <div className="flex justify-between">
-        <button
-          type="submit"
-          className="inline-flex justify-center transform transition-all rounded-lg border border-black px-4 py-2 text-sm font-medium text-black hover:-translate-y-1"
-        >
-          Отправить
-        </button>
-        <button
-          type="button"
-          className="inline-flex justify-center transform transition-all rounded-lg border border-black px-4 py-2 text-sm font-medium text-black hover:-translate-y-1"
-          onClick={onClose}
-        >
-          Отмена
-        </button>
-      </div>
+      <button type="submit" className="flex uppercase gap-3 hover:text-base_2">
+        Отправить
+        <MoveUpRight />
+      </button>
     </form>
   );
 };
