@@ -28,7 +28,7 @@ const config: Config = {
     textColor: {
       'base': "#220A67",
       "base_2": "#3F1CA3",
-      'white': '#fff'
+      'white': '#fff',
     },
   },
   plugins: [],

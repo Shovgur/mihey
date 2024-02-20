@@ -67,3 +67,6 @@
   transform-origin: 100px 100px;
   transform: scale(1) translate(-10px, -70px);
 }
+.swiper-wrapper{
+  display:flex;
+}

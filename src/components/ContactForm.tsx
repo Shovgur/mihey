@@ -46,7 +46,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ onClose }) => {
       <label className="flex flex-col">
         <input
           placeholder="Имя"
-          className="w-full pt-2 border-0 border-b bg-transparent pb-3 lg:px-2 text-white font-light leading-[1em] tracking-[-.03em] text-black outline-none placeholder:font-light placeholder:text-black placeholder:text-opacity-50 focus:placeholder:text-opacity-30 lg:pb-2 "
+          className="w-full pt-2 border-0 border-b bg-transparent pb-3 lg:px-2 !text-white font-light leading-[1em] tracking-[-.03em]  outline-none placeholder:font-light placeholder:text-black placeholder:text-opacity-50 focus:placeholder:text-opacity-30 lg:pb-2 "
           type="text"
           name="name"
           value={formData.name}
@@ -56,7 +56,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ onClose }) => {
       <label className="flex flex-col">
         <input
           placeholder="Email"
-          className="w-full rounded-none pt-2 border-0 border-b bg-transparent pb-3 lg:px-2 text-white  font-light leading-[1em] tracking-[-.03em] text-black outline-none placeholder:font-light placeholder:text-black placeholder:text-opacity-50 focus:placeholder:text-opacity-30 lg:pb-2 "
+          className="w-full rounded-none pt-2 border-0 border-b bg-transparent pb-3 lg:px-2 text-white  font-light leading-[1em] tracking-[-.03em]  outline-none placeholder:font-light placeholder:text-black placeholder:text-opacity-50 focus:placeholder:text-opacity-30 lg:pb-2 "
           type="email"
           name="email"
           value={formData.email}
@@ -66,7 +66,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ onClose }) => {
       <label className="flex flex-col">
         <input
           placeholder="Сообщение"
-          className="w-full rounded-none pt-2 border-0 border-b bg-transparent pb-3 lg:px-2 text-white  font-light leading-[1em] tracking-[-.03em] text-black outline-none placeholder:font-light placeholder:text-black placeholder:text-opacity-50 focus:placeholder:text-opacity-30 lg:pb-2 "
+          className="w-full rounded-none pt-2 border-0 border-b bg-transparent pb-3 lg:px-2 text-white  font-light leading-[1em] tracking-[-.03em]  outline-none placeholder:font-light placeholder:text-black placeholder:text-opacity-50 focus:placeholder:text-opacity-30 lg:pb-2 "
           type="text"
           name="message"
           value={formData.message}
