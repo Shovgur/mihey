@@ -18,7 +18,7 @@ const config: Config = {
       primary: ["Vollkorn"],
     },
     fontSize: {
-      big: ["5rem", { fontWeight: 400, lineHeight: "120px" }],
+      big: ["4rem", { fontWeight: 400, lineHeight: "120px" }],
       "header-little": ["1rem", { fontWeight: 400, lineHeight: "18px" }],
       "page-title": [
         "2rem",
@@ -26,8 +26,8 @@ const config: Config = {
       ],
     },
     textColor: {
-      'base': "#220A67",
-      "base_2": "#3F1CA3",
+      'base': "#4E4D5A",
+      "base_2": "#6E6C78",
       'white': '#fff',
     },
   },

@@ -1,13 +1,15 @@
-"use client";
 import NavLinks from "@/components/navLinks";
 import Link from "next/link";
+
 const Header = () => {
   return (
-    <header className="w-full px-[124px] z-30 relative border-b pt-20 pb-14 flex justify-between items-center">
-      <Link href="/" className="text-[40px]">
-        Mihey
-      </Link>
-      <NavLinks />
+    <header className="w-full px-[124px] z-30 relative border-b border-opacity-30 border-b-white pt-20 pb-14 flex justify-between items-center">
+      <div className="flex items-center w-full justify-between ">
+        <Link href="/" className="text-[30px]">
+          Mihey
+        </Link>
+        <NavLinks />
+      </div>
     </header>
   );
 };
