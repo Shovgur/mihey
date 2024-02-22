@@ -11,7 +11,7 @@ const page = () => {
     setIsOpen(false);
   }
   return (
-    <section className="pt-12 flex justify-between w-full">
+    <div className="pt-12 flex justify-between w-full">
       <div className="flex flex-col">
         <h1 className="text-big leading-[80px] max-w-[770px]">
           Do you have any Ideas? Let’s create the future
@@ -26,7 +26,7 @@ const page = () => {
           src={avatar}
         />
       </div>
-    </section>
+    </div>
   );
 };
 
