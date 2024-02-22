@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="text-white font-primary relative bg-[#161313] z-20">
         <Header />
-        <main className="flex min-h-screen px-[104px] overflow-x-hidden z-20 relative">
+        <main className="flex min-h-screen px-[30px] md:px-[104px] overflow-x-hidden z-20 relative">
           {children}
         </main>
 
@@ -32,7 +32,7 @@ export default function RootLayout({
           alt="elipse_1"
         />
         <Image
-          className="absolute h-full w-full top-0"
+          className="absolute object-cover h-full w-full top-0"
           alt="photo"
           src={mihey}
         />

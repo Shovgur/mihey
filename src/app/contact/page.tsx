@@ -11,16 +11,16 @@ const page = () => {
     setIsOpen(false);
   }
   return (
-    <div className="pt-12 flex justify-between w-full">
-      <div className="flex flex-col">
-        <h1 className="text-big leading-[80px] max-w-[770px]">
+    <div className="pt-12 flex-col flex md:flex md:flex-row justify-between w-full">
+      <div className="flex flex-col pb-10 md:pb-0">
+        <h1 className="text-[35px] leading-[48px] md:text-big md:leading-[80px] max-w-[770px]">
           Do you have any Ideas? Let’s create the future
         </h1>
         <ContactForm onClose={closeModal} />
       </div>
       <div>
         <Image
-          className="bg-white h-[300px] rounded-full mt-16 ml-10"
+          className="bg-white h-[300px] md:block hidden rounded-full mt-16 ml-10"
           width={300}
           alt="avatar"
           src={avatar}

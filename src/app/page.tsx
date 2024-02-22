@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <section className="flex pt-[100px] justify-between w-full">
       <div className="flex flex-col relative  gap-5">
-        <h1 className="text-big z-20">Привет, я Дима Михей</h1>
+        <h1 className="text-big leading-[89px] z-20">Привет, я Дима Михей</h1>
         <Image
           className="absolute -left-10 -top-6 z-10 animate-spin-slow"
           width={170}

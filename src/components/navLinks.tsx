@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -11,10 +11,10 @@ const NavLinks = () => {
 
   return (
     <nav className="md:flex md:items-center md:justify-end md:gap-12 text-white ">
-      <button className="md:hidden flex " onClick={toggleMenu}>
+      <button className="md:hidden flex uppercase" onClick={toggleMenu}>
         Меню
       </button>
-      <div className={`md:flex md:gap-12 ${isOpen ? 'block' : 'hidden'}`}>
+      <div className={`md:flex md:gap-12 ${isOpen ? "flex flex-col" : "hidden"}`}>
         <Link className="hover:text-base_2 transition-all" href="/works">
           Работы
         </Link>
