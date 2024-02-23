@@ -3,11 +3,11 @@
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap");
 
-.swiper-wrapper{
-  display:flex;
+.swiper-wrapper {
+  display: flex;
 }
 .animate-spin-slow {
-  animation: spin 10s linear infinite; 
+  animation: spin 10s linear infinite;
 }
 
 @keyframes spin {
@@ -17,4 +17,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+body.locked {
+  overflow: hidden;
 }
