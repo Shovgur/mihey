@@ -27,7 +27,7 @@ export default function RootLayout({
         {children}
 
         <Image
-          className="absolute bottom-0 w-full z-10"
+          className="absolute bottom-0 w-full h-full z-10"
           src={elipse_dark}
           alt="elipse_1"
         />

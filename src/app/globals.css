@@ -87,3 +87,18 @@ body.locked {
   transform-origin: 100px 100px;
   transform: scale(1) translate(-10px, -70px);
 }
+
+
+.loader {
+  border: 12px solid #6E6C78; 
+  border-top: 12px solid #4E4D5A; 
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
