@@ -1,7 +1,7 @@
 export const WorksData = [
   {
     id: 1,
-    title: "Kwares App",
+    title: "Ведущий мероприятий",
     description:
       "An emergency app which give users the ability to - on the spot- report emergency cases near them as happening at exact time of reporting.",
     link: "Casetudy",
@@ -15,14 +15,14 @@ export const WorksData = [
   },
   {
     id: 3,
-    title: "Kwares App",
+    title: "Техника речи",
     description:
       "An emergency app which give users the ability to - on the spot- report emergency cases near them as happening at exact time of reporting.",
     link: "Casetudy",
   },
   {
     id: 4,
-    title: "Kwares App",
+    title: "Ораторское искусство",
     description:
       "An emergency app which give users the ability to - on the spot- report emergency cases near them as happening at exact time of reporting. ",
     link: "Casetudy",

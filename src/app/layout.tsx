@@ -15,26 +15,21 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  isHomepage,
 }: Readonly<{
   children: React.ReactNode;
+  isHomepage: boolean;
 }>) {
   return (
     <html lang="en">
       <body className="text-white font-primary relative bg-[#161313] z-20">
         <Header />
-        <main className="flex min-h-screen px-[30px] md:px-[104px] overflow-x-hidden z-20 relative">
-          {children}
-        </main>
+        {children}
 
         <Image
           className="absolute bottom-0 w-full z-10"
           src={elipse_dark}
           alt="elipse_1"
-        />
-        <Image
-          className="absolute object-cover h-full w-full top-0"
-          alt="photo"
-          src={mihey}
         />
       </body>
     </html>
