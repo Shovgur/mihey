@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import ContactForm from "@/components/ContactForm";
-import avatar from "../../../public/images/mihey/sticker_mihey.webp";
+import avatar from "../../../public/images/mihey/mihey.jpeg";
 import Image from "next/image";
 
 const page = () => {
@@ -19,14 +19,7 @@ const page = () => {
           </h1>
           <ContactForm onClose={closeModal} />
         </div>
-        <div>
-          <Image
-            className="bg-white h-[300px] md:block hidden rounded-full mt-16 ml-10"
-            width={300}
-            alt="avatar"
-            src={avatar}
-          />
-        </div>
+        <div className="bg-[url('/images/mihey/mihey.jpeg')] bg-cover md:block hidden rounded-full w-[400px] h-[400px]"></div>
       </div>
     </main>
   );

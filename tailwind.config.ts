@@ -13,6 +13,7 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      mihey: "url('/public/images/mihey/mihey.jpeg')",
     },
     fontFamily: {
       primary: ["Vollkorn"],
@@ -26,9 +27,9 @@ const config: Config = {
       ],
     },
     textColor: {
-      'base': "#4E4D5A",
-      "base_2": "#6E6C78",
-      'white': '#fff',
+      base: "#4E4D5A",
+      base_2: "#6E6C78",
+      white: "#fff",
     },
   },
   plugins: [],

@@ -3,42 +3,28 @@ export const WorksData = [
     id: 1,
     title: "Ведущий мероприятий",
     description:
-      "An emergency app which give users the ability to - on the spot- report emergency cases near them as happening at exact time of reporting.",
+      "Профессиональный ведущий мероприятий с харизмой и опытом, способный создать уникальную атмосферу и сделать ваше торжество незабываемым.",
     link: "Casetudy",
   },
   {
     id: 2,
-    title: "Kwares App",
+    title: "MC",
     description:
-      "An emergency app which give users the ability to - on the spot- report emergency cases near them as happening at exact time of reporting.",
+      "Ведущий, которые с лёгкостью объединяют аудиторию, создавая незабываемую атмосферу на праздниках, мероприятиях и концертах.",
     link: "Casetudy",
   },
   {
     id: 3,
-    title: "Техника речи",
+    title: "Преподаватель ораторского исскуства",
     description:
-      "An emergency app which give users the ability to - on the spot- report emergency cases near them as happening at exact time of reporting.",
+      "Помогаю развивать навыки эффективного общения и уверенной презентации, развиваю харизму и навык публичных выступлений.",
     link: "Casetudy",
   },
   {
     id: 4,
-    title: "Ораторское искусство",
+    title: "Фото-видеомодель",
     description:
-      "An emergency app which give users the ability to - on the spot- report emergency cases near them as happening at exact time of reporting. ",
-    link: "Casetudy",
-  },
-  {
-    id: 5,
-    title: "Kwares App",
-    description:
-      "An emergency app which give users the ability to - on the spot- report emergency cases near them as happening at exact time of reporting. ",
-    link: "Casetudy",
-  },
-  {
-    id: 6,
-    title: "Kwares App",
-    description:
-      "An emergency app which give users the ability to - on the spot- report emergency cases near them as happening at exact time of reporting.",
+      " Харизматичная модель, объединяющая в себе красоту и профессионализм, готовый вдохновить на создание уникальных образов в фото и видео проектах. ",
     link: "Casetudy",
   },
 ];
