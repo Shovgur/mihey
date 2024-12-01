@@ -3,8 +3,7 @@ import "./globals.css";
 import Header from "./header";
 import Image from "next/image";
 import elipse_dark from "../../public/images/elipse_all_dark.png";
-import mihey from "../../public/images/mihey/bg.png";
-
+import localFont from "next/font/local";
 import "swiper/css";
 import "swiper/css/effect-fade";
 
@@ -13,6 +12,8 @@ export const metadata: Metadata = {
   description: "Ведущий мероприятий",
 };
 
+const font = localFont({ src: "./fonts/Figtree-VariableFont_wght.ttf" });
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -20,7 +21,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="text-white font-primary relative bg-[#161313] z-20">
+      <body
+        className={`text-white font-primary relative bg-[#161313] z-20 ${font.className}`}
+      >
         <Header />
         {children}
 

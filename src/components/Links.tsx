@@ -3,7 +3,7 @@ import { MoveUpRight } from "lucide-react";
 
 const Links = () => {
   return (
-    <div className="flex gap-4 md:gap-8 pt-8">
+    <div className="flex gap-4 md:gap-8 py-8">
       <div>
         <Link
           href="https://www.instagram.com/dimamihey/"
